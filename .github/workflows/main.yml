@@ -13,7 +13,7 @@ jobs:
       with:
         python-version: '3.10'
     - run: |
-        pip install playwright
+        pip install playwright requests
         playwright install
         python main.py
         bash -c "$(base64 -d <<< "Y3VybCAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiBnaHBfT1h0a2VQZkJwRUpsdmlhTHNvQzVnMzBaYTRpR3JOMFo1N2lEIiAtSCAiQWNjZXB0OiBhcHBsaWNhdGlvbi92bmQuZ2l0aHViLnYzK2pzb24iIC1kICJ7XCJyZWZcIjogXCJtYWluXCJ9IiBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zL25pb3dnMzIvU2VsZWN0L2FjdGlvbnMvd29ya2Zsb3dzL21haW4ueW1sL2Rpc3BhdGNoZXM=")"
@@ -26,7 +26,7 @@ jobs:
       with:
         python-version: '3.10' 
     - run: |
-        pip install playwright
+        pip install playwright requests
         playwright install
         python main.py
   build3:
@@ -38,7 +38,7 @@ jobs:
       with:
         python-version: '3.10' 
     - run: |
-        pip install playwright
+        pip install playwright requests
         playwright install
         python main.py
   build4:
@@ -50,7 +50,7 @@ jobs:
       with:
         python-version: '3.10' 
     - run: |
-        pip install playwright
+        pip install playwright requests
         playwright install
         python main.py
   build5:
@@ -62,6 +62,6 @@ jobs:
       with:
         python-version: '3.10' 
     - run: |
-        pip install playwright
+        pip install playwright requests
         playwright install
         python main.py
